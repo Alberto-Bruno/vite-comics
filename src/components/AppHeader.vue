@@ -85,10 +85,28 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    ul {
+    nav {
+        display: flex;
+        align-items: center;
         height: 100%;
-        list-style: none;
-        margin: 2rem 1rem;
+
+        ul {
+            height: 100%;
+            list-style: none;
+            margin: 2rem 1rem;
+            display: flex;
+            align-items: center;
+
+            li {
+                height: 100%;
+                padding: 1rem;
+                font-size: 13px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+            }
+        }
+
     }
+
 }
 </style>
