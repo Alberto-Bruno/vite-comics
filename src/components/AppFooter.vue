@@ -75,9 +75,29 @@ export default {
                 <button>SING-UP NOW&#33;</button>
 
                 <div class="social-link">
-                    <h3>FOLLOW US</h3>
-                    <img src="../assets/img/footer-facebook.png" alt="">
-                    <img src="../assets/img/footer-periscope.png" alt="">
+                    <ul>
+                        <h3>FOLLOW US</h3>
+                        <li>
+                            <a href="">
+                                <img src="../assets/img/footer-facebook.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../assets/img/footer-periscope.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../assets/img/footer-facebook.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../assets/img/footer-facebook.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -132,6 +152,7 @@ export default {
     background-color: #303030;
     padding: 30px;
 
+
     button {
         padding: 10px;
         background-color: transparent;
@@ -144,11 +165,29 @@ export default {
         display: flex;
         justify-content: flex-end;
 
-        h3 {
-            color: $color-blue;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            list-style: none;
+
+            h3 {
+                color: $color-blue;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+            }
+
+            li {
+                list-style: none;
+
+                img {
+                    max-width: 100%;
+                    height: 35px;
+                    margin: 0 0.3rem;
+                }
+            }
         }
     }
+
 }
 </style>
