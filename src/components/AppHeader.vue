@@ -82,11 +82,11 @@ export default {
 
 .logo {
     width: 90px;
-    margin-right: 100px;
+    margin-left: 100px;
 }
 
 header {
-    height: 250px;
+    height: 150px;
     margin: 15px;
     display: flex;
     justify-content: space-between;
@@ -105,10 +105,10 @@ header {
             align-items: center;
 
             li {
-                height: 50%;
+                height: 100%;
                 padding: 1rem;
                 font-size: 10px;
-                font-family: Roboto, sans-serif;
+                font-family: 'Roboto', sans-serif;
                 font-weight: 500;
                 display: flex;
                 align-items: center;
