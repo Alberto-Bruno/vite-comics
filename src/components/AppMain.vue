@@ -9,7 +9,7 @@ export default {
     },
     data() {
         return {
-            comic: [
+            comics: [
                 {
                     thumb:
                         'https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX',
@@ -94,18 +94,26 @@ export default {
                     series: 'Catwoman',
                     type: 'graphic novel',
                 },
-            ]
+            ],
         }
-    }
+    },
 };
 </script>
 
 <template>
+    <section>
+        <div class="jumbo"></div>
+    </section>
     <div class="bg-black">
         <div class="container">
-            <h2>--> Content goese here!</h2>
+            <div class="btn-top">
+                <button>Current Series</button>
+            </div>
             <div class="row">
                 <comic-series v-for="comic in comics" :key="comic.thumb" :comic="comic"></comic-series>
+            </div>
+            <div class="btn-bottom">
+                <button>Load More</button>
             </div>
         </div>
     </div>
@@ -113,9 +121,40 @@ export default {
 
 
 <style lang="scss">
+.jumbo {
+    width: 100%;
+    height: 300px;
+    background-image: url('../assets/img/jumbotron.jpg');
+    background-size: cover;
+}
+
 .bg-black {
     background-color: black;
     padding: 60px 0;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+
+        .btn-top {
+            width: 100%;
+            position: relative;
+            top: -30px;
+            left: 0;
+            right: 0;
+
+            button {
+                padding: 15px 30px;
+                border: 1px solid white;
+                background-color: #0382F9;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 h2 {
